@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Twitch Streamer list</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="twitchTheme.css">
+</head>
+
+<body class="w3-black">
+  <div class="w3-container w3-margin">
+    <h1><strong>Twitch Streamers</strong></h1>
+    <p>by Arthur Osipyan</p>
+    <div class="w3-container" style="font-size:18px; margin-bottom:15px">
+      <a href="https://www.instagram.com/arty.nyc/" target='_blank'><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/arty_nyc" target='_blank'><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/arthurosipyan/" target='_blank'><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://unsplash.com/@arty_nyc" target='_blank'><i class="fa fa-camera w3-hover-opacity"></i></a>
+      <a href="https://github.com/arthurosipyan" target='_blank'><i class="fa fa-github w3-hover-opacity"></i></a>
+    </div>
+    <div class="btn-group w3-margin-bottom" style="margin: 10px">
+      <button type="button" class="btn btn-primary" id="all">All</button>
+      <button type="button" class="btn btn-primary" id="online">Online</button>
+      <button type="button" class="btn btn-primary w3-safety-red" id="offline">Offline</button>
+    </div>
+    <h2 style="margin-top:15px; margin-bottom:15px" id='current'><strong>All Streamers:</strong></h2>
+    <ul class="w3-ul w3-row w3-col" id="result">
+    </ul>
+
+  </div>
+  <script src="stream.js"></script>
+</body>
+
+</html>
